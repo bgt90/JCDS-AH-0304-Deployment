@@ -1,0 +1,962 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="scripts.js">
+  </script>
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Dataset</title>
+
+
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Calibri';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+ text-align: center;
+}
+span.rvts1 /* Heading */
+{
+ font-family: 'Calibri';
+ font-weight: bold;
+ color: #030307;
+ text-align: center;
+}
+span.rvts2 /* Subheading */
+{
+ font-family: 'Calibri';
+ font-weight: bold;
+ color: #060614;
+ text-align: center;
+}
+span.rvts3 /* Keywords */
+{
+ font-family: 'Calibri';
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ font-family: 'Calibri';
+ color: #008000;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+--></style>
+</head>
+
+
+<body style="background-image: url({{url_for('static',filename='ee.jpg') }});background-size:fit;">
+  <div class="container-fluid">
+      <center><br>
+            <h2 class="display-4">
+                <font color="black"><strong>Wine </strong>
+                </font><span class="badge badge-secondary">Dataset</span>
+            </h2><br><br>
+</body>
+
+<body>
+
+  <table class="table table-bordered table-hover table-condensed">
+    <thead><tr><th title="Field #1">alcohol</th>
+    <th title="Field #2">density</th>
+    <th title="Field #3">fixed acidity level</th>
+    <th title="Field #4">chlorides level</th>
+    <th title="Field #5">label</th>
+    </tr></thead>
+    <tbody><tr>
+    <td align="right">11.4</td>
+    <td align="right">0.9917</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.8</td>
+    <td align="right">0.9976</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.2</td>
+    <td align="right">0.9934</td>
+    <td>low</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.7</td>
+    <td align="right">1.0</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.6</td>
+    <td align="right">0.9918</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.0</td>
+    <td align="right">0.992</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.8</td>
+    <td align="right">0.9946</td>
+    <td>low</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">9.4</td>
+    <td align="right">0.9932</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.3</td>
+    <td align="right">0.992</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">11.4</td>
+    <td align="right">0.9917</td>
+    <td>high</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.0</td>
+    <td align="right">0.9999</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.6</td>
+    <td align="right">0.998</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.5</td>
+    <td align="right">0.9918</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.5</td>
+    <td align="right">0.9918</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.0</td>
+    <td align="right">0.9999</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.6</td>
+    <td align="right">0.998</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.8</td>
+    <td align="right">0.9927</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.0</td>
+    <td align="right">0.9959</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.8</td>
+    <td align="right">0.9927</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.5</td>
+    <td align="right">0.9929</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.7</td>
+    <td align="right">0.9948</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">10.4</td>
+    <td align="right">0.9954</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.4</td>
+    <td align="right">0.9954</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.4</td>
+    <td align="right">0.9954</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.5</td>
+    <td align="right">1.0004</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">10.4</td>
+    <td align="right">0.9954</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.4</td>
+    <td align="right">0.9954</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.4</td>
+    <td align="right">0.9974</td>
+    <td>medium</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.1</td>
+    <td align="right">0.9936</td>
+    <td>medium</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.3</td>
+    <td align="right">0.9978</td>
+    <td>medium</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.4</td>
+    <td align="right">0.9974</td>
+    <td>medium</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.8</td>
+    <td align="right">0.9927</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.9</td>
+    <td align="right">0.9984</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">9.2</td>
+    <td align="right">0.9938</td>
+    <td>medium</td>
+    <td>high</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.1</td>
+    <td align="right">0.9972</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">12.2</td>
+    <td align="right">0.997</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">9.8</td>
+    <td align="right">0.9935</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.4</td>
+    <td align="right">0.9956</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">9.9</td>
+    <td align="right">0.9984</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">9.2</td>
+    <td align="right">0.9934</td>
+    <td>low</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">11.6</td>
+    <td align="right">0.9963</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">10.4</td>
+    <td align="right">0.9938</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.9</td>
+    <td align="right">0.9948</td>
+    <td>low</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">9.3</td>
+    <td align="right">0.9975</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">11.0</td>
+    <td align="right">0.9975</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">11.5</td>
+    <td align="right">0.9937</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.4</td>
+    <td align="right">0.9914</td>
+    <td>low</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.8</td>
+    <td align="right">0.9982</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.8</td>
+    <td align="right">0.9982</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.5</td>
+    <td align="right">0.9979</td>
+    <td>low</td>
+    <td>medium</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">9.1</td>
+    <td align="right">0.9971</td>
+    <td>medium</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.1</td>
+    <td align="right">0.9921</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.6</td>
+    <td align="right">0.9981</td>
+    <td>low</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">10.5</td>
+    <td align="right">0.9974</td>
+    <td>low</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">10.5</td>
+    <td align="right">0.9979</td>
+    <td>low</td>
+    <td>medium</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">9.8</td>
+    <td align="right">0.9982</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.9</td>
+    <td align="right">0.9942</td>
+    <td>low</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">9.5</td>
+    <td align="right">0.9956</td>
+    <td>medium</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.8</td>
+    <td align="right">0.9924</td>
+    <td>low</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.5</td>
+    <td align="right">0.9971</td>
+    <td>low</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.5</td>
+    <td align="right">0.9956</td>
+    <td>medium</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.3</td>
+    <td align="right">0.9982</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.5</td>
+    <td align="right">0.9973</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.4</td>
+    <td align="right">0.9932</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.7</td>
+    <td align="right">0.9976</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.9</td>
+    <td align="right">0.9962</td>
+    <td>low</td>
+    <td>high</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.4</td>
+    <td align="right">0.9956</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.4</td>
+    <td align="right">0.9932</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.7</td>
+    <td align="right">0.9976</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.6</td>
+    <td align="right">0.9992</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.3</td>
+    <td align="right">0.9983</td>
+    <td>high</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.0</td>
+    <td align="right">0.9937</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.5</td>
+    <td align="right">0.99</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.6</td>
+    <td align="right">0.9994</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">9.4</td>
+    <td align="right">0.9938</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.5</td>
+    <td align="right">0.9965</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.4</td>
+    <td align="right">0.9943</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">10.5</td>
+    <td align="right">0.9927</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.2</td>
+    <td align="right">0.9940000000000001</td>
+    <td>medium</td>
+    <td>high</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.4</td>
+    <td align="right">0.9928</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.2</td>
+    <td align="right">0.9964</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.6</td>
+    <td align="right">0.9917</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.5</td>
+    <td align="right">0.9972</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.2</td>
+    <td align="right">0.9964</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.6</td>
+    <td align="right">0.9954</td>
+    <td>low</td>
+    <td>high</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.7</td>
+    <td align="right">0.993</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.7</td>
+    <td align="right">0.9928</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.7</td>
+    <td align="right">0.9916</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.5</td>
+    <td align="right">0.9936</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.9</td>
+    <td align="right">0.9962</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.1</td>
+    <td align="right">0.9899</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.7</td>
+    <td align="right">0.9948</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">9.9</td>
+    <td align="right">0.996</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">11.4</td>
+    <td align="right">0.9907</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.7</td>
+    <td align="right">0.9940000000000001</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.5</td>
+    <td align="right">0.9913</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.6</td>
+    <td align="right">0.9976</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.5</td>
+    <td align="right">0.9904</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.0</td>
+    <td align="right">0.992</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.6</td>
+    <td align="right">0.9976</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.5</td>
+    <td align="right">0.9990000000000001</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.6</td>
+    <td align="right">0.9975</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.9</td>
+    <td align="right">0.9937</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.9</td>
+    <td align="right">0.9937</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.9</td>
+    <td align="right">0.998</td>
+    <td>medium</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.9</td>
+    <td align="right">0.998</td>
+    <td>medium</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">8.8</td>
+    <td align="right">0.9944</td>
+    <td>medium</td>
+    <td>high</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.0</td>
+    <td align="right">0.9988</td>
+    <td>low</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">12.0</td>
+    <td align="right">0.9907</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.0</td>
+    <td align="right">0.9988</td>
+    <td>low</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">10.0</td>
+    <td align="right">0.9921</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">12.1</td>
+    <td align="right">0.9908</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">11.0</td>
+    <td align="right">0.9931</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">11.2</td>
+    <td align="right">0.9915</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.3</td>
+    <td align="right">1.0002</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>1</td>
+    </tr>
+    <tr>
+    <td align="right">10.4</td>
+    <td align="right">0.9926</td>
+    <td>low</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">9.1</td>
+    <td align="right">0.9934</td>
+    <td>medium</td>
+    <td>medium</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.4</td>
+    <td align="right">0.992</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.8</td>
+    <td align="right">0.9918</td>
+    <td>low</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    <tr>
+    <td align="right">10.119460500963383</td>
+    <td align="right">0.9940000000000001</td>
+    <td>medium</td>
+    <td>low</td>
+    <td>0</td>
+    </tr>
+    </tbody></table>  
+
+<br>
+
+<!-- Home -->
+    <center>
+        <form action = "http://127.0.0.1:5000">
+        <button style="height:45px;width:150px;font-size: 20px;text-align: center;line-height: 20px; background-color: #f50101;color: cornsilk;  type="button" class="btn btn-info"">Home</button>
+        </form><br><br>
+    </center> 
+
+<!--JavaScript at end of body for optimized loading-->
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+</html>
